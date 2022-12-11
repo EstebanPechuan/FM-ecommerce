@@ -89,6 +89,10 @@
     }
     
     .each_img.active img {
-        opacity: 0.4;
+        opacity: 0.4 !important;
+    }
+
+    .each_img:hover img {
+        opacity: 0.6;
     }
 </style>

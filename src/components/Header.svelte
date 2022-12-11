@@ -68,6 +68,21 @@
     header li {
         font-size: 14px;
         color: #0009;
+        position: relative;
+    }
+    
+    header li:hover {
+        color: #000c;
+    }
+
+    header li:hover::after {
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: var(--clr-1);
+        position: absolute;
+        bottom: -42px;
+        left: 0;
     }
 
     header i {
@@ -104,7 +119,8 @@
     }
 
     .card_details {
-        width: 350px;
+        width: 100vh;
+        max-width: 350px;
         padding: 20px 30px;
         background: #fff;
         box-shadow: 0 2px 10px #0004;
@@ -116,7 +132,14 @@
     }
 
     .imgUser img {
-        width: 30px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 2px solid transparent;
+        cursor: pointer;
+    }
+    .imgUser img:hover {
+        border: 2px solid var(--clr-1);
     }
     @media (min-width: 650px) {
         .menu {

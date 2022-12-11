@@ -60,7 +60,9 @@
 
 <style>
     .description {
-        padding-right: 80px;
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -104,15 +106,18 @@
     .add_to_cart {
         margin-top: 20px;
         display: flex;
+        flex-direction: column;
         align-items: center;
         gap: 20px;
     }
     .counter {
+        width: 100%;
         height: 30px;
         padding: 0 20px;
         background: #0001;
         border-radius: 4px;
         display: flex;
+        justify-content: space-between;
         align-items: center;
         gap: 30px;
     }
@@ -125,9 +130,11 @@
         cursor: pointer;
     }
     form {
+        width: 100%;
         height: 30px;
     }
     form button {
+        width: 100%;
         height: 100%;
         padding: 0 40px;
         border: none;
@@ -135,5 +142,19 @@
         color: #fff;
         border-radius: 4px;
         cursor: pointer;
+    }
+    form button:hover {
+        opacity: 0.6;
+    }
+    @media (min-width: 650px) {
+        .add_to_cart {
+            flex-direction: row;
+        }
+        .counter {
+            width: auto;
+        }
+        form {
+            width: auto;
+        }
     }
 </style>
