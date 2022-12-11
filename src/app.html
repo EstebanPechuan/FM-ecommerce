@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		%sveltekit.head%
+
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+		<style>
+			:root {
+				--clr-1: hsl(26, 100%, 55%);
+				--clr-2: hsl(25, 100%, 94%);
+			}
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Kumbh Sans', sans-serif;
+			}
+			body {
+				background: #f4f4f4;
+				color: #060606;
+			}
+			a {
+				text-decoration: none;
+				color: inherit;
+			}
+			li {
+				list-style-type: none;
+			}
+			img {
+				display: block;
+			}
+
+			.container {
+				width: 100%;
+				max-width: 1200px;
+				margin: 30px auto;
+				padding: 0 30px;
+			}
+		</style>
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">%sveltekit.body%</div>
+	</body>
+</html>
