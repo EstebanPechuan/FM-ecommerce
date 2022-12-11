@@ -53,7 +53,8 @@
 <style>
     .images_product {
         width: 100%;
-        padding: 0 100px;
+        max-width: 400px;
+        margin: auto;
     }
 
     .images_product img {

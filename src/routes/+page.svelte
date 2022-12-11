@@ -15,7 +15,12 @@
 <style>
     .section_home {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 50px;
+    }
+    @media (min-width: 650px) {
+        .section_home {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 </style>

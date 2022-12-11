@@ -75,7 +75,7 @@
     }
 
     .menu {
-        display: flex;
+        display: none;
         gap: 10px;
     }
 
@@ -117,5 +117,10 @@
 
     .imgUser img {
         width: 30px;
+    }
+    @media (min-width: 650px) {
+        .menu {
+            display: flex;
+        }
     }
 </style>
